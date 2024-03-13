@@ -1,20 +1,20 @@
 interface Student {
-  firstname: string;
-  lastname: string;
+  firstName: string;
+  lastName: string;
   age: number;
   location: string;
 }
 
 const student1: Student {
-  firstname: 'Jon';
-  lastname: 'snow';
+  firstName: 'Jon';
+  lastName: 'snow';
   age: 26;
   location: 'Las vegas';
 };
 
 const student2: Student {
-  firstname: 'Harry';
-  lastname: 'potter';
+  firstName: 'Harry';
+  lastName: 'potter';
   age: 19;
   location: 'new york';
 };
