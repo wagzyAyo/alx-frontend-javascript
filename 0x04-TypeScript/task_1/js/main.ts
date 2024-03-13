@@ -2,8 +2,9 @@ interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
   fullTimeEmployee: boolean;
-  yearsOfExperience: number;
-  [key: string]: boolean;
+  location: string;
+  yearsOfExperience?: number;
+  [key: string]: any
 }
 
 interface Directors extends Teacher {
@@ -14,4 +15,4 @@ interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-const export printTeacher: printTeacherFunction = (firstName: string, lastname: string): string => `${firstName[0]}. ${lastName}`;
+export const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => `${firstName[0]}. ${lastName}`;
